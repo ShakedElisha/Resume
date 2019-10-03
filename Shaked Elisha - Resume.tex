@@ -1,10 +1,17 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[9pt,letterpaper]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[letterpaper,margin=0.75in]{geometry}
-\usepackage[compact]{titlesec}
+\usepackage{libertine}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{soul}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+
+\hypersetup{pdfauthor={Shaked Elisha}, pdftitle={Shaked Elisha - Resume}}
 
 \pagestyle{empty}
 
@@ -12,84 +19,125 @@
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{\titlerule\vspace{.5ex}}%[]
 \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}%[]
 
-\newlist{rlist}{description}{2}
-\setlist[rlist,1]{font=\normalfont\itshape\space, noitemsep}
-\setlist[rlist,2]{font=\normalfont\itshape\textendash\space, noitemsep}
+\setlist[description,1]{font=\normalfont\itshape, topsep=2pt}
+\setlist[description,2]{font=\normalfont\bfseries, topsep=2pt}
+\setlist[itemize, 1]{label=, topsep=2pt}
 
+\newcommand{\sectionHead}[1]{\vspace{.7ex} \noindent {\large \textbf{#1} \titlerule[.4pt]}}%\vspace{-.5ex}}
 
+\newcommand{\subsectionHead}[2]{\noindent { \textbf{#1} \hfill #2}}%\vspace{-.5ex}}
+
+\setuldepth{Shaked}
+
+\renewcommand*\familydefault{\sfdefault}
+
+\newcommand{\CustomSummary}{With experience in statistical planning, data analysis, and consulting.}
 
 \begin{document}
-
-\section*{Shaked Elisha}
-\begin{center}
-	%{\Large \textbf{Shaked Elisha}}\\
-	{\emph{School Address:} \ XXX xxxxxx Ave.\ \textbar\ Apt. XXX\ \textbar\ Pittsburgh, PA 15213}\\
-	{\emph{Permanent Address:} \ XXXX xxxx xxxxxxx\ \textbar\ Yorba Linda, CA 92886}\\
-	{\emph{Phone Number:} (949)xxx-xxxx\ \ \textbar\ \ \emph{Email:} email@gmail.com}
-\end{center}
-
-\subsection*{Education}
-\begin{rlist}
-	\item \textbf{University of Pittsburgh \hfill Pittsburgh, PA}
-	\item \textit{Dietrich School of Arts and Sciences, Expected M.A. in Statistics \hfill 2018 - 2019}
-	\item \textit{Dietrich School of Arts and Sciences, B.S. in Statistics \hfill 2014 - 2018}
-	\begin{rlist}
-		\item Minors: Economics, French
-		\item Major GPA: %3.368 %\ \ \ Cumulative GPA: 3.151
-		\item University Honors College, Emerging Leaders - Leadership Training, Completed Outside the Classroom Curriculum, Model UN, SEMF, Chabad
-	\end{rlist}
-\end{rlist}
-\subsubsection*{Relevant Coursework}
-\begin{rlist}
-	\item Course 1
-\end{rlist}
-
-\subsection*{Experience}
-\begin{rlist}
-	\item \textbf{Johnson \& Johnson - Biosense Webster \hfill Irwindale, CA}
-	\item \textit{Quality Process and Engineering Intern {\scriptsize(through Kelly Services)} \hfill June 2017 - August 2017}
-	\begin{rlist}
-		\item Led a project of finding discrepancies in logs of incoming equipment from an acquired company.
-		\item Created a spreadsheet categorizing and accounting for all incoming equipment.
-		\item Logged incoming equipment into calibration record.
-	\end{rlist}
-	\item \textbf{Johnson \& Johnson - Biosense Webster \hfill Irwindale, CA}
-	\item \textit{RF Generator Product R\&D Intern {\scriptsize(through Kelly Services)} \normalsize\hfill June 2016 - May 2017}
-	\begin{rlist}
-		\item Defined Electro-Cardiology Therapeutic Ablation product requirements.
-		\item Collected all requirements from different R\&D groups and aligned them in one delivery method.
-		\item Worked with teams in the US and Israel to integrate IBM Rational DOORs.
-		\item Reviewed,optimized, and performed quality analysis of R programs for code quality and performance.
-		\item Worked remotely from September 2016 - May 2017 
-	\end{rlist}
-	\item \footnotesize\textbf{YLS Bakery Café \hfill Yorba Linda, CA}
-	\item \footnotesize\textit{Barista \hfill June 216 - August 2016}
-	\item \footnotesize\textbf{Build a Bear Workshop (Downtown Disney Branch) \hfill Anaheim, CA}
-	\item \footnotesize\textit{Sales Associate \hfill May 2015 - August 2015}
-	\item \footnotesize\textbf{H. Salt Fish and Chips \hfill Orange, CA}
-	\item \footnotesize\textit{Waitress / Hostess \hfill June 2014 - September 2014}
-\end{rlist}
-
-\subsection*{Computer Skills}
-\begin{rlist}
-	\item[Languages] R, \LaTeX
-	\item[Software] Minitab, SAS, IBM Rational DOORs, Microsoft Office Products (i.e. Excel, Word, PowerPoint), and Adobe Photoshop
-\end{rlist}
-
-\subsection*{Language Skills}
-\begin{rlist}
-	\item[English] Fluent (speaking, reading, writing)
-	\item[Hebrew] Fluent (speaking, reading, writing)
-	\item[French] Fluent (speaking, reading, writing)
-	\item U.S. Citizen as of 2015 - U.S. Resident as of 2009
-\end{rlist}
-
-\subsection*{Volunteering}
-\begin{rlist}
-	\item Challah for Hunger – food prep for donation
-	\item Assistant teacher to children’s self-defense classes
-	\item Beach cleanups in Corona del Mar, Newport Beach
-\end{rlist}
-
-
+	
+	\begin{center}
+		{\Large \textbf{Shaked Elisha}}
+		
+		{949-466-4598 \ \textbar \ \ \href{mailto:elisha.shaked@gmail.com}{elisha.shaked@gmail.com}}\\
+		{\href{www.linkedin.com/in/shakedelisha}{www.linkedin.com/in/shakedelisha}}
+	\end{center}
+	
+	\begin{center}
+		{\large --- \textbf{Summary} ---}
+	\end{center}
+	\vspace{-0.6\baselineskip}
+	Graduated with a \textbf{Masters in Statistics, focused on Data Science, with a 3.5 GPA}. \CustomSummary\
+	Ability to identify and solve problems resulting in structural improvements. Tenacity and drive to achieve goals, with a dedication and commitment consistent with organizational priorities. \textbf{\textit{Key strengths}} include leadership with a sense of urgency, flexible and proactive problem solving, self-motivated, detail oriented, analytical, excellent interpersonal skills, and written/verbal communications in three languages (English, French, and Hebrew).
+	\vspace{0.3\baselineskip}
+	
+	\sectionHead{Education}
+	
+	\subsectionHead{University of Pittsburgh}{Pittsburgh, PA}
+	\begin{description}[noitemsep]
+		\item \textit{\textbf{Master of Arts in Statistics}} (3.5 GPA) \hfill \textit{September 2018 -- April 2019}
+		\begin{itemize}[noitemsep]
+			\item \textit{\ul{Relevant Courses:}} Data Mining, Statistical Analysis and Optimization, Applied Multivariate Analysis, Survival Analysis, Python for Data Management and Analytics, Statistical Consulting.
+		\end{itemize}
+		\item \textit{\textbf{Bachelor of Science in Statistics} \hfill September 2014 -- April 2018}
+		\begin{itemize}[noitemsep]
+			\item \textit{\ul{Minors:}} Economics, French
+			\item \emph{Deans List {\scriptsize Spring 2018}}, University Honors College, Emerging Leaders - Leadership Training, Completed Outside the Classroom Curriculum, Model UN, SEMF, Chabad, Sinai Scholars
+			\item \textit{\ul{Relevant Courses:}} Applied Regression with Written Component, Applied Time Series, Statistical Quality Control, Statistical Packages, Topics in Applied Statistics 1 (Data Science), Stochastic Processes, Intermediate Probability \& Mathematical Statistics, Applied Statistical Methods 1 \& 2 (graduate level course).
+		\end{itemize}
+	\end{description}
+	
+	\sectionHead{Technical Skills}
+	\begin{description}[topsep=3pt, itemsep=0pt]%[topsep=\topsep]
+		\item[\textbf{Statistical Analysis:}] Data Mining, Data Management, Data Visualization, Multivariate Analysis, Survival Analysis, Time Series Analysis, Stochastic Processes, Probability \& Mathematical Statistics, Statistical Quality Control
+		\item[\textbf{Languages:}] R, \LaTeX, SQL, Python, HTML, SAS
+		\item[\textbf{Software:}] Tableau, Minitab, Microsoft Office Products (Excel, Word, PowerPoint, \ldots), IBM Rational DOORs, Adobe Photoshop
+		\item[\textbf{Languages:}] Fluent (speaking, reading, writing): English, French, Hebrew
+	\end{description}
+	
+	%\vspace{-1ex}
+	\sectionHead{Work History}
+	\begin{description}[noitemsep]
+		\item \textbf{\ul{Medical Care Corporation}} \hfill Newport Beach, CA
+		\item {\textit{\textbf{FAST Stage Prediction Consultant} \hfill March 2019 -- July 2019}}
+		\begin{itemize}[noitemsep]
+			\item Clinical datasets from patients diagnosed with dementia who took the Mild Cognitive Impairment Screening (MCIS) test of cognitive ability and were evaluated with the Functional Assessment Staging Test.
+			\item Building a predictive model for the value of the MCIS test to FAST staging in Python and R.
+			\item Built web applications using HTML to visualize the data.
+		\end{itemize}
+		\item \textbf{\ul{University of Pittsburgh -- Department of Statistics}} \hfill Pittsburgh, PA
+		\item {\textit{\textbf{Statistical Consultant} \hfill January 2019 -- April 2019}}
+		\begin{itemize}[noitemsep]
+			\item Consulted on projects from clients affiliated the university.
+			\item The projects involved clinical sample size calculations, clinical statistical analysis planning, big data inference, prediction, and identification important variables, multi-variable data visualization.
+		\end{itemize}
+		\item \textbf{\ul{University of Pittsburgh -- Department of Statistics}} \hfill Pittsburgh, PA
+		\item {\textit{\textbf{Statistics Computer Lab Student Worker} \hfill September 2018 -- April 2019}}
+		\begin{itemize}[noitemsep]
+			\item Explaining statistical concepts to students of all levels.
+			\item Assist students with statistical programming needs.
+		\end{itemize}
+		\item \textbf{\ul{Johnson \& Johnson -- Cardiovascular Division}} \hfill Irvine, CA
+		\item \textit{\textbf{Quality Systems Analyst Intern} \hfill May 2018 -- July 2018}
+		\begin{itemize}[noitemsep]
+			\item Provided data visualization for the Quality Systems Management Reports (QSMR).
+			\item Led a project of optimizing the tracking and organization of external standards.
+			\item Helped reformat quality plan for two companies (Biosense Webster and ASP).
+		\end{itemize}
+		\item \textbf{\ul{Johnson \& Johnson -- Biosense Webster}} \hfill Irwindale, CA
+		\item \textit{\textbf{Quality Process and Engineering Intern} \hfill June 2017 -- August 2017}
+		\begin{itemize}[noitemsep]
+			\item Led a project of identifying discrepancies in equipment data logs from an acquired company.
+			\item Created a system to categorize and account for all incoming equipment.
+			\item Logged incoming equipment into calibration record.
+		\end{itemize}
+		\newpage
+		\item \textbf{\ul{Johnson \& Johnson -- Biosense Webster}} \hfill Irwindale, CA
+		\item \textit{\textbf{RF Generator Product R\&D Intern} \hfill June 2016 -- May 2017}
+		\begin{itemize}[noitemsep]
+			\item Defined Electro-Cardiology Therapeutic Ablation product requirements.
+			\item Collected all requirements from different R\&D groups and aligned them in one delivery method.
+			\item Worked with teams in the US and Israel to integrate IBM Rational DOORs.
+			\item Reviewed, optimized, and performed quality analysis of R programs for code quality and performance.
+		\end{itemize}
+	\end{description}
+	
+	\sectionHead{Projects}
+	\begin{description}[noitemsep]
+		\item \textbf{Music and Lyrical Data Analysis \hfill 2018}
+		\begin{itemize}[noitemsep]
+			\item Musical data from Spotify's API and lyrics from Genius Lyrics' API using HTML scraping
+			\item Stored in SQLite database using Python
+			\item Analysis done in R (sentiment analysis, high-dimensional linear regression, model selection techniques, regression and classification trees and ensembles, and neural network classification)
+		\end{itemize}
+	\end{description}
+	
+	%\vspace{.5ex}
+	\sectionHead{Volunteering}
+	\begin{description}[topsep=3pt, noitemsep]
+		\item Chabad House on Campus -- Jewish educational and religious community center for students (current)
+		\item Challah for Hunger -- food prep for donation
+		\item Assistant teacher to children’s self-defense classes
+		\item Beach cleanups in Corona del Mar, Newport Beach
+	\end{description}
+	
 \end{document}
